@@ -1,12 +1,6 @@
-cmake_minimum_required(VERSION 3.0)
-project(subgraph_matching)
+cmake_minimum_required(VERSION 3.17)
+project(Graph_Pattern_Matching_Challenge)
 
-add_compile_options(-O3)
-add_compile_options(-Wall)
-add_compile_options(-std=c++11)
+set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
-
-file(GLOB SOURCES src/*)
-
-add_subdirectory(main)
+add_executable(Graph_Pattern_Matching_Challenge main.cpp)
