@@ -1,0 +1,3 @@
+*.cc linguist-detectable=true
+*.cs linguist-detectable=false
+*.igraph linguist-detectable=false

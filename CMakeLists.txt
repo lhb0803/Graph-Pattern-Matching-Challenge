@@ -1,6 +1,14 @@
-cmake_minimum_required(VERSION 3.17)
-project(Graph_Pattern_Matching_Challenge)
+cmake_minimum_required(VERSION 3.0)
+project(subgraph_matching)
 
-set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-O3)
+add_compile_options(-Wall)
+add_compile_options(-std=c++11)
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
 
-add_executable(Graph_Pattern_Matching_Challenge main.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+file(GLOB SOURCES src/*)
+
+add_subdirectory(main)
